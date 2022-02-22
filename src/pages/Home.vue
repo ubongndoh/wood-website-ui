@@ -107,11 +107,11 @@ export default {
 			</header>
 		</section>
 		<section>
-			<div class="mt-40">
-				<h2 class="font-bold text-4xl ml-10 leading-normal">120 +</h2>
-				<h2 class="ml-10 text-lg font-medium">Branded products</h2>
+			<div class="mt-40 px-16">
+				<h2 class="font-bold text-4xl leading-normal">120 +</h2>
+				<h2 class="ml-0 text-lg font-medium">Branded products</h2>
 				<div
-					class="grid lg:grid-cols-5 grid-cols-2 justify-center items-center mx-16 my-10"
+					class="grid lg:grid-cols-5 grid-cols-2 justify-center items-center my-10"
 				>
 					<div
 						><img
@@ -155,12 +155,28 @@ export default {
 						seconds to a surface sized to fit everything you need close to you.
 						Available in oval or round.
 					</p>
-					<a
-						class="btn lg:py-4 py-3 px-8 border-b-2 border-transparent lg:mb-0 mb-2 text-white font-bold rounded"
-						href="#"
-						>Shop Now</a
+					<div
+						class="flex flex-row btn text-white font-bold rounded lg:py-3 py-3 px-6 lg:mb-0 mb-2 w-1/3 justify-between"
 					>
+						<a class="" href="#">Shop Now </a>
+						<span
+							><svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="h-6 w-6"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M14 5l7 7m0 0l-7 7m7-7H3"
+								/></svg
+						></span>
+					</div>
 				</div>
+
 				<div class="">
 					<div class="grid justify-center items-center">
 						<img class="w-80" src="../assets/tablewithflower.svg" alt="" />
@@ -183,23 +199,38 @@ export default {
 						and add-ons to build a shelving system that works perfectly in your
 						space - either in your home or office.
 					</p>
-					<a
-						class="btn lg:py-4 py-3 px-8 border-b-2 border-transparent lg:mb-0 mb-2 text-white font-bold rounded"
-						href="#"
-						>Shop Now</a
+					<div
+						class="flex flex-row btn text-white font-bold rounded lg:py-3 py-3 px-6 lg:mb-0 mb-2 w-1/3 justify-between"
 					>
+						<a class="" href="#">Shop Now </a>
+						<span
+							><svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="h-6 w-6"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M14 5l7 7m0 0l-7 7m7-7H3"
+								/></svg
+						></span>
+					</div>
 				</div>
 			</div>
 		</section>
 		<section>
-			<div class="flex flex-row mx-8 justify-between mt-16 mb-10">
-				<h2 class="text-4xl leading-10 font-bold">Our Products</h2>
-				<a href="" class="text-base product">See all</a>
+			<div class="flex flex-row justify-between mt-16 mb-10 px-16">
+				<h2 class="text-5xl leading-10 font-bold">Our Products</h2>
+				<a href="" class="text-xl product">See all</a>
 			</div>
-			<div class="grid lg:grid-cols-4 grid-cols-1">
+			<div class="grid lg:grid-cols-4 grid-cols-1 text-xl">
 				<div class="grid justify-center items-center">
 					<img class="w-56" src="../assets/product1.svg" alt="" />
-					<div class="text-center product">Chairs</div>
+					<div class="text-center product m-4">Chairs</div>
 				</div>
 				<div class="grid justify-center items-center">
 					<img class="w-56" src="../assets/product2.svg" alt="" />
@@ -243,7 +274,7 @@ export default {
 			</div>
 		</section>
 		<section>
-			<div class="my-20 testimonials py-10">
+			<div class="my-20 testimonials py-10 px-16">
 				<h2 class="text-white text-3xl leading-10 font-bold mx-10"
 					>What Our Clients Say</h2
 				>
