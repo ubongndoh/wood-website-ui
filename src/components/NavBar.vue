@@ -28,7 +28,7 @@
 		<div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
 			<nav class="flex flex-row">
 				<ul
-					class="lg:flex flex-1 lg:w-5/6 items-center justify-between text-sm text-gray-700 pt-4 lg:pt-0"
+					class="lg:flex flex-1 lg:w-5/6 items-center justify-between text-lg text-gray-700 pt-4 lg:pt-0"
 				>
 					<li
 						><a
