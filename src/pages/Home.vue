@@ -54,11 +54,11 @@ export default {
 			<header>
 				<div class="grid lg:grid-cols-2 grid-cols-1 gap-2">
 					<div class="px-16 py-20">
-						<h2 class="text-5xl font-medium"
+						<h2 class="lg:text-5xl text-2xl font-medium"
 							>For the home of <br />
 							tomorrow</h2
 						>
-						<p class="mt-10 mb-14 font-normal text-xl"
+						<p class="mt-10 mb-14 font-normal lg:text-xl text-base"
 							>We design sustainable furnitures. Find a piece from our large
 							collection of luxurious interiors designed by professional
 							interior designers.
@@ -149,8 +149,10 @@ export default {
 		<section>
 			<div class="grid lg:grid-cols-2 grid-cols-1 gap-2 relative">
 				<div class="px-16 py-20 lg:order-none order-last">
-					<h2 class="text-5xl leading-10 font-medium">Coffee Table</h2>
-					<p class="leading-7 my-7 text-xl"
+					<h2 class="lg:text-5xl text-2xl leading-10 font-medium"
+						>Coffee Table</h2
+					>
+					<p class="leading-7 my-7 lg:text-xl text-base"
 						>The perfect companion for your sofa. Rigid, wooden legs attach in
 						seconds to a surface sized to fit everything you need close to you.
 						Available in oval or round.
@@ -192,8 +194,8 @@ export default {
 					</div>
 				</div>
 				<div class="px-16 py-20">
-					<h2 class="text-5xl leading-10 font-medium">The Shelf</h2>
-					<p class="leading-7 my-7 text-xl"
+					<h2 class="lg:text-5xl text-2xl leading-10 font-medium">The Shelf</h2>
+					<p class="leading-7 my-7 lg:text-xl text-base"
 						>A modern shelf that fits perfectly. When it comes to modularity,
 						the limit is endless. Start with one shelf and add expansion units
 						and add-ons to build a shelving system that works perfectly in your
@@ -224,25 +226,25 @@ export default {
 		</section>
 		<section>
 			<div class="flex flex-row justify-between mt-16 mb-10 px-16">
-				<h2 class="text-5xl leading-10 font-bold">Our Products</h2>
-				<a href="" class="text-xl product">See all</a>
+				<h2 class="lg:text-5xl text-2xl leading-10 font-bold">Our Products</h2>
+				<a href="" class="lg:text-xl text-base product">See all</a>
 			</div>
 			<div class="grid lg:grid-cols-4 grid-cols-1 text-xl">
 				<div class="grid justify-center items-center">
 					<img class="w-56" src="../assets/product1.svg" alt="" />
-					<div class="text-center product m-4">Chairs</div>
+					<div class="text-center product my-6">Chairs</div>
 				</div>
 				<div class="grid justify-center items-center">
 					<img class="w-56" src="../assets/product2.svg" alt="" />
-					<div class="text-center product">Tables</div>
+					<div class="text-center product my-6">Tables</div>
 				</div>
 				<div class="grid justify-center items-center">
 					<img class="w-56" src="../assets/product3.svg" alt="" />
-					<div class="text-center product">Sofas</div>
+					<div class="text-center product my-6">Sofas</div>
 				</div>
 				<div class="grid justify-center items-center">
 					<img class="w-56" src="../assets/product4.svg" alt="" />
-					<div class="text-center product">Cupboards</div>
+					<div class="text-center product my-6">Cupboards</div>
 				</div>
 			</div>
 		</section>
@@ -254,11 +256,11 @@ export default {
 					</div>
 				</div>
 				<div class="lg:pr-14 pr-0 py-20 px-4">
-					<h2 class="text-4xl leading-10 font-medium"
+					<h2 class="lg:text-4xl text-2xl leading-10 font-medium"
 						>Find your ideal <br />
 						interior design.</h2
 					>
-					<p class="leading-7 my-10 text-xl"
+					<p class="leading-7 my-10 lg:text-xl text-base"
 						>Styling a room is an art, from mixing and matching wood to figuring
 						out which coffee tables go best with which sectionals. Be inspired.
 					</p>
@@ -283,10 +285,10 @@ export default {
 		</section>
 		<section>
 			<div class="grid justify-center items-center px-40 my-20">
-				<h2 class="text-center lg:text-4xl text-lg leading-10 font-semibold"
+				<h2 class="text-center lg:text-4xl text-base leading-10 font-semibold"
 					>Subscribe to our Newsletter</h2
 				>
-				<p class="text-center text-base my-4"
+				<p class="text-center lg:text-base text-sm my-4"
 					>Get a 20% OFF (plus the latest furniture news and <br />
 					product launches) just by subscribing to our newsletter.</p
 				>
