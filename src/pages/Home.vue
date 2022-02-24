@@ -202,7 +202,7 @@ export default {
 						space - either in your home or office.
 					</p>
 					<div
-						class="flex flex-row btn text-white font-bold rounded lg:py-3 py-4 px-5 lg:mb-0 mb-2 lg:w-1/2 w-2/3 justify-between"
+						class="flex flex-row btn text-white font-bold rounded lg:py-4 py-4 px-5 lg:mb-0 mb-2 lg:w-1/2 w-2/3 justify-between"
 					>
 						<a class="" href="#">Shop Now </a>
 						<span
