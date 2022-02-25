@@ -10,6 +10,7 @@ export default {
 		Carousel,
 	},
 	setup() {
+		const middleBefore = (el) => {};
 		const beforeEnter = (el) => {};
 		const enter = (el) => {
 			// TweenMax.to(".green", 2, {y:200, ease:Bounce.easeOut, yoyoEase:Power2.easeOut,  repeat:10, repeatDelay:0.1});
@@ -41,7 +42,7 @@ export default {
 			});
 		};
 
-		return { beforeEnter, enter, middleEnter };
+		return { beforeEnter, enter, middleEnter, middleBefore };
 	},
 };
 </script>
@@ -111,7 +112,7 @@ export default {
 				<h2 class="font-bold text-4xl leading-normal">120 +</h2>
 				<h2 class="ml-0 text-lg font-medium">Branded products</h2>
 				<div
-					class="grid lg:grid-cols-5 grid-cols-2 justify-center items-center my-10"
+					class="grid lg:grid-cols-5 grid-cols-2 justify-center items-center gap-4 my-10"
 				>
 					<div
 						><img
@@ -277,7 +278,7 @@ export default {
 		</section>
 		<section>
 			<div class="my-20 testimonials py-10 px-16">
-				<h2 class="text-white text-3xl leading-10 font-bold mx-10"
+				<h2 class="text-white lg:text-3xl text-2xl leading-10 font-bold mx-10"
 					>What Our Clients Say</h2
 				>
 				<Carousel />
@@ -285,7 +286,7 @@ export default {
 		</section>
 		<section>
 			<div class="grid justify-center items-center px-40 my-20">
-				<h2 class="text-center lg:text-4xl text-base leading-10 font-semibold"
+				<h2 class="text-center lg:text-4xl text-2xl leading-10 font-semibold"
 					>Subscribe to our Newsletter</h2
 				>
 				<p class="text-center lg:text-base text-sm my-4"

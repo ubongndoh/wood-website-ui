@@ -1,27 +1,36 @@
 <template>
-	<Carousel :autoplay="4000" :itemsToShow="3" :wrapAround="true" class="mt-10">
-		<Slide v-for="(slide, index) in slides" :key="index">
-			<div
-				class="py-14 grid justify-center items-center text-white border-white border rounded lg:h-96 h-full transform hover:scale-105 hover:shadow-xl hover:bg-white hover:text-black cursor-pointer lg:w-full w-28"
-			>
-				<div class="mb-0 text-4xl">
-					{{ slide.emo }}
-				</div>
-				<div class="text-center my-8 px-10">
-					{{ slide.summary }}
-				</div>
-				<div class="flex lg:flex-row flex-col lg:mx-4 mx-0">
-					<div><img :src="slide.img" alt="" class="mx-auto" /></div>
-					<div class="px-8">
-						<div class="text-base font-semibold">{{ slide.name }}</div>
-						<div class="text-xs">{{ slide.title }}</div>
+	<div>
+		<!-- <p>Resize me! Current width is: {{ windowWidth }}</p> -->
+
+		<Carousel
+			:autoplay="4000"
+			:itemsToShow="show"
+			:wrapAround="true"
+			class="mt-10"
+		>
+			<Slide v-for="(slide, index) in slides" :key="index">
+				<div
+					class="py-14 grid justify-center items-center text-white border-white border rounded lg:h-96 h-full transform hover:scale-105 hover:shadow-xl hover:bg-white hover:text-black cursor-pointer lg:w-full w-60"
+				>
+					<div class="mb-0 text-4xl">
+						{{ slide.emo }}
+					</div>
+					<div class="text-center my-8 px-10">
+						{{ slide.summary }}
+					</div>
+					<div class="flex lg:flex-row flex-col lg:mx-4 mx-0">
+						<div><img :src="slide.img" alt="" class="mx-auto" /></div>
+						<div class="px-8">
+							<div class="text-base font-semibold">{{ slide.name }}</div>
+							<div class="text-xs">{{ slide.title }}</div>
+						</div>
 					</div>
 				</div>
-			</div>
-		</Slide>
+			</Slide>
 
-		...
-	</Carousel>
+			...
+		</Carousel>
+	</div>
 </template>
 
 <script>
@@ -32,6 +41,9 @@ import 'vue3-carousel/dist/carousel.css';
 import img1 from '../assets/test-img1.svg';
 import img2 from '../assets/test-img2.svg';
 import img3 from '../assets/test-img3.svg';
+let show;
+if (window.innerWidth >= 768) show = 3;
+if (window.innerWidth <= 768) show = 1;
 
 export default defineComponent({
 	name: 'Autoplay',
@@ -40,6 +52,7 @@ export default defineComponent({
 		Slide,
 		Pagination,
 	},
+
 	data() {
 		return {
 			slides: [
@@ -75,8 +88,36 @@ export default defineComponent({
 						'“Very intentional, thoughtful and beautiful design. Just the right fit to my office space.”',
 				},
 			],
+			show: show,
+
+			windowWidth: window.innerWidth,
 		};
 	},
+	// computed() {
+	// 	//let show
+	// 	//window.matchMedia('screen and (max-width: 768px)').matches
+	// 	// if (window.innerWidth > 768) {
+	// 	// 	this.show = 3;
+	// 	// } else {
+	// 	// 	this.show = 1;
+	// 	// }
+
+	// 	window.onresize = () => {
+	// 		this.windowWidth = window.innerWidth;
+	// 		if (window.innerWidth <= 768) this.show = 1;
+	// 		if (window.innerWidth >= 768) this.show = 3;
+	// 	};
+	// },
+	// methods() {
+	// 	//let show;
+	// 	console.log(window.innerWidth);
+
+	// 	if (window.innerWidth > 768) {
+	// 		this.show = 3;
+	// 	} else {
+	// 		this.show = 1;
+	// 	}
+	// },
 });
 </script>
 

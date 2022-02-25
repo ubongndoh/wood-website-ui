@@ -12,7 +12,9 @@
 			</a>
 		</div>
 
-		<label for="menu-toggle" class="cursor-pointer ml-48 lg:hidden block"
+		<label
+			for="menu-toggle"
+			class="cursor-pointer ml-60 pl-12 -mt-8 lg:hidden block"
 			><svg
 				class="fill-current text-gray-900"
 				xmlns="http://www.w3.org/2000/svg"
